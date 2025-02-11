@@ -1,0 +1,122 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #f4c10f;
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  transition: all 0.5s ease;
+}
+
+.nav-item {
+  margin-left: 2.5rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.nav-links:hover,
+.nav-links.active {
+  color: #f4c10f;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f4c10f;
+  transition: width 0.3s ease;
+}
+
+.nav-links:hover::after,
+.nav-links.active::after {
+  width: 100%;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .nav-menu {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: -100%; 
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+    transition: left 0.5s ease;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show the menu when active */
+    left: 0; /* Slide into view */
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .nav-links {
+    font-size: 1.2rem;
+  }
+}

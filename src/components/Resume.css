@@ -1,0 +1,74 @@
+/* Resume Section Styles */
+.resume-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.resume-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.resume-content p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #f4c10f;
+  color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.download-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .resume-content h2 {
+    font-size: 2rem;
+  }
+
+  .resume-content p {
+    font-size: 1rem;
+  }
+
+  .resume-link {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
