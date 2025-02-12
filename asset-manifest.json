@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ashwin-portfolio/static/css/main.96b5666e.css",
+    "main.css": "/ashwin-portfolio/static/css/main.8431b663.css",
     "main.js": "/ashwin-portfolio/static/js/main.b8f61b46.js",
     "static/media/Hospital.png": "/ashwin-portfolio/static/media/Hospital.b93f0422522fc93aa9b7.png",
     "static/media/prfile.jpg": "/ashwin-portfolio/static/media/prfile.67d91ff90cfafd5c7985.jpg",
     "static/media/meat.png": "/ashwin-portfolio/static/media/meat.d1095bbfffa14e753c01.png",
     "static/media/e-commerce.png": "/ashwin-portfolio/static/media/e-commerce.e54561d8fca44c49e2c1.png",
     "index.html": "/ashwin-portfolio/index.html",
-    "main.96b5666e.css.map": "/ashwin-portfolio/static/css/main.96b5666e.css.map",
+    "main.8431b663.css.map": "/ashwin-portfolio/static/css/main.8431b663.css.map",
     "main.b8f61b46.js.map": "/ashwin-portfolio/static/js/main.b8f61b46.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b5666e.css",
+    "static/css/main.8431b663.css",
     "static/js/main.b8f61b46.js"
   ]
 }
