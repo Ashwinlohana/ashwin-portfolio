@@ -22,7 +22,7 @@ const Portfolio = () => {
     {
       title: "White Meat - Fresh & Organic Meat Delivery",
       description:
-        "A modern and responsive website design for White Meat, a brand specializing in fresh and organic meat delivery. Features include product showcase, online ordering, and a fully responsive design.",
+        "A modern and responsive website design for White Meat, a brand specializing in fresh meat delivery. Features include product showcase, online ordering, and a fully responsive design.",
       technologies: ["HTML", "CSS", "JavaScript"],
       image: MeatImg,
       liveLink: "https://ashwinlohana.github.io/internship-task2",

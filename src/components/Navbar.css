@@ -1,7 +1,7 @@
 /* Navbar Styles */
 .navbar {
   background-color: #333;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@
   color: #fff;
   font-size: 1.8rem;
   cursor: pointer;
-  display: none; /* Hidden by default */
+  display: none; 
   transition: transform 0.3s ease;
 }
 
@@ -88,6 +88,9 @@
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem; 
+  }
   .menu-icon {
     display: block; 
   }
@@ -105,8 +108,8 @@
   }
 
   .nav-menu.active {
-    display: flex; /* Show the menu when active */
-    left: 0; /* Slide into view */
+    display: flex;
+    left: 0; 
   }
 
   .nav-item {
